@@ -1,17 +1,14 @@
-//
-//  HolmeApp.swift
-//  Holme
-//
-//  Created by Gracjan Baryla on 19/05/2025.
-//
-
 import SwiftUI
 
-@main
-struct HolmeApp: App {
+@main struct
+HolmeApp : App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            Text("Settings")
         }
     }
 }
+
+
